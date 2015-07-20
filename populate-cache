@@ -2,6 +2,6 @@
 set -ex
 if ! test -x cache/script; then
     mkdir -p cache
-    echo false > cache/script
+    echo true > cache/script
     chmod +x cache/script
 fi
