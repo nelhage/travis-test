@@ -1,3 +1,10 @@
 sudo: false
+cache:
+  directories:
+    - cache
+before_install:
+  - bash populate-cache
 script:
-  - true
+  - 'echo contents of script:'
+  - cat cache/script
+  - ./cache/script

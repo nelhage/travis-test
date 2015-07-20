@@ -1,0 +1,7 @@
+#!/bin/bash
+set -ex
+if ! test -x cache/script; then
+    mkdir -p cache
+    echo false > cache/script
+    chmod +x cache/script
+fi
